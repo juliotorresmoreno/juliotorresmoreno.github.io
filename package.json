@@ -1,4 +1,5 @@
 {
+  "homepage": "https://xtorresm.github.io",
   "name": "fakebook",
   "version": "0.0.1",
   "description": "",
@@ -10,6 +11,7 @@
     "build": "webpack",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "deploy": "gh-pages -d dist",
     "test": "cypress open"
   },
   "author": "",
@@ -28,6 +30,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "standard": "^17.0.0",
     "ts-loader": "^9.4.1",
