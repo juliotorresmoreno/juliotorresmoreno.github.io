@@ -1907,6 +1907,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/config.ts":
+/*!***********************!*\
+  !*** ./src/config.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    title: \"FakeBook\",\n    building: \"MISSING_ENV_VAR\".BUILDING,\n});\n\n\n//# sourceURL=webpack://fakebook/./src/config.ts?");
+
+/***/ }),
+
 /***/ "./src/features/auth.ts":
 /*!******************************!*\
   !*** ./src/features/auth.ts ***!
@@ -1936,7 +1947,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _Root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Root */ \"./src/Root.tsx\");\n/* harmony import */ var _styles_00_root_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/_00-root.scss */ \"./src/styles/_00-root.scss\");\n\n\n\nvar container = document.getElementById('app');\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(container);\nvar app = (0,_Root__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({});\nroot.render(app);\n\n\n//# sourceURL=webpack://fakebook/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _Root__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Root */ \"./src/Root.tsx\");\n/* harmony import */ var _styles_00_root_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/_00-root.scss */ \"./src/styles/_00-root.scss\");\n/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./config */ \"./src/config.ts\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\nvar container = document.getElementById('app');\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(container);\nvar app;\nif (_config__WEBPACK_IMPORTED_MODULE_3__[\"default\"].building === 'false') {\n    app = (0,_Root__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({});\n}\nelse {\n    app = react__WEBPACK_IMPORTED_MODULE_4___default().createElement('h1', null, 'Building...');\n}\nroot.render(app);\n\n\n//# sourceURL=webpack://fakebook/./src/index.ts?");
 
 /***/ }),
 
