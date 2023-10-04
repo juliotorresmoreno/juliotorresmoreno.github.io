@@ -9,10 +9,10 @@ const root = createRoot(container)
 
 let app: React.ReactNode
 
-if (config.building === 'false') {
-  app = Root({})
-} else {
+if (config.building === 'true') {
   app = React.createElement('h1', null, 'Building...')
+} else {
+  app = Root({})
 }
 
 root.render(app)
