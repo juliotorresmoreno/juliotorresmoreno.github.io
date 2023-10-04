@@ -1,7 +1,7 @@
 import React from 'react'
 
-const App = () => {
-  return <>Hello world!</>
+const App: React.FC = () => {
+  return <>Hello world</>
 }
 
 export default App
