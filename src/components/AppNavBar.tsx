@@ -11,8 +11,6 @@ const menuItems: Item[] = [
   { title: 'Business', link: '/business' },
   { title: 'Opinion', link: '/opinion' },
   { title: 'Science', link: '/science' },
-  { title: 'Opinion', link: '/opinion' },
-  { title: 'Science', link: '/science' },
 ]
 
 const AppNavBar: React.FC = () => {
