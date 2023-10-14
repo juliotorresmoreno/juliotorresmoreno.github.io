@@ -1,45 +1,13 @@
-import { Col, Row } from 'react-bootstrap'
-import AppLayout from '../components/AppLayout'
-import News from '../components/News'
+import AppLayout from '@/components/AppLayout'
+import { Container } from '@/components/ux/container'
+import { Content } from '@/components/ux/content'
 
 const HomePage: React.FC = () => {
   return (
     <AppLayout>
-      <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-        <div className="col-lg-6 px-0">
-          <h1 className="display-4 fst-italic">
-            Title of a longer featured blog post
-          </h1>
-          <p className="lead my-3">
-            Multiple lines of text that form the lede, informing new readers
-            quickly and efficiently about what’s most interesting in this post’s
-            contents.
-          </p>
-          <p className="lead mb-0">
-            <a href="#" className="text-body-emphasis fw-bold">
-              Continue reading...
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <Row>
-        <Col md={6}>
-          <News />
-        </Col>
-        <Col md={6}>
-          <News />
-        </Col>
-        <Col md={6}>
-          <News />
-        </Col>
-        <Col md={6}>
-          <News />
-        </Col>
-        <Col md={6}>
-          <News />
-        </Col>
-      </Row>
+      <Container>
+        <Content>Home</Content>
+      </Container>
     </AppLayout>
   )
 }

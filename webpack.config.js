@@ -41,19 +41,23 @@ const configuration = {
       },
       {
         test: /\.(css|scss)$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', 'scss'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
+    alias: {
+      '@/components': path.resolve(__dirname, 'src/components'),
+      '@/lib': path.resolve(__dirname, 'src/lib'),
+
+      '@/features': path.resolve(__dirname, 'src/features'),
+      '@/hoc': path.resolve(__dirname, 'src/hoc'),
+      '@/hooks': path.resolve(__dirname, 'src/hooks'),
+      '@/pages': path.resolve(__dirname, 'src/pages'),
+      '@/store': path.resolve(__dirname, 'src/store'),
+      '@/l18n': path.resolve(__dirname, 'src/l18n'),
+    },
   },
 }
 
